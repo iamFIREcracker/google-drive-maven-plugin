@@ -54,7 +54,7 @@
     <dependency>
       <groupId>com.google.apis</groupId>
       <artifactId>google-api-services-drive</artifactId>
-      <version>v2-rev5-1.7.2-beta</version>
+      <version>v2-rev99-1.17.0-rc</version>
     </dependency>
   </dependencies>
   <repositories>
