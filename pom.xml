@@ -56,6 +56,11 @@
       <artifactId>google-api-services-drive</artifactId>
       <version>v2-rev99-1.17.0-rc</version>
     </dependency>
+    <dependency>
+      <groupId>com.google.http-client</groupId>
+      <artifactId>google-http-client-jackson2</artifactId>
+      <version>1.15.0-rc</version>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>

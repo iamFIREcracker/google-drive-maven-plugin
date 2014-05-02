@@ -16,32 +16,15 @@ package com.fredericvauchelles;
  * limitations under the License.
  */
 
-import org.apache.maven.plugin.*;
-import org.apache.maven.shared.model.fileset.util.*;
-import org.apache.maven.shared.model.fileset.FileSet;
-
-import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
-import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
-import com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse;
 import com.google.api.client.http.FileContent;
-import com.google.api.client.http.HttpTransport;
-import com.google.api.client.http.javanet.NetHttpTransport;
-import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.jackson.JacksonFactory;
-import com.google.api.services.drive.*;
-import com.google.api.services.drive.model.File;
-import com.google.api.services.drive.model.ParentReference;
-import com.google.api.services.drive.model.ChildReference;
+import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.Drive.Files.Insert;
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.FileOutputStream;
-import java.util.Arrays;
-import java.util.Properties;
+import com.google.api.services.drive.model.ChildReference;
+import com.google.api.services.drive.model.File;
+import org.apache.maven.plugin.AbstractMojo;
+import org.apache.maven.plugin.MojoExecutionException;
+import org.apache.maven.shared.model.fileset.FileSet;
+import org.apache.maven.shared.model.fileset.util.FileSetManager;
 
 /**
  * Goal which touches a timestamp file.
